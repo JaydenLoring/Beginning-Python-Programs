@@ -1,0 +1,11 @@
+tuple_menu = ("Sushi", "Steak", "Tacos", "Sandwich", "Ice Cream")
+
+def print_menu(menu): print("Menu:") for item in menu: print("-", item)
+
+print_menu(tuple_menu)
+
+try: tuple_menu[0] = "Pancakes" except TypeError as e: print("\nError:", e)
+
+new_menu = ("Pancakes", "Steak", "Tacos", "Pasta", "Cheesecake")
+
+print("\nUpdated Menu:") print_menu(new_menu)
