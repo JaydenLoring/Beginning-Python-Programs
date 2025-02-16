@@ -1,0 +1,12 @@
+pizza_orders = ["pepperoni", "margherita", "BBQ chicken", "veggie", "hawaiian"]
+
+finished_pizzas = []
+
+while pizza_orders:
+    current_pizza = pizza_orders.pop(0)
+    print(f"I made your {current_pizza} pizza.")
+    finished_pizzas.append(current_pizza)
+
+print("\nPizzas made:")
+for pizza in finished_pizzas:
+    print(pizza)
